@@ -19,7 +19,7 @@ function BackgroundSlider({ courseNumber }) {
   }, [currentState]);
 
   const bgImageStyle = {
-    backgroundImage: `url(/${imageSlide[courseNumber][currentState].url})`,
+    backgroundImage: `url(/culinary-voyage/${imageSlide[courseNumber][currentState].url})`,
   };
 
   //currentIndex is the built in second paramater from map method
