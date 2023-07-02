@@ -30,23 +30,23 @@ function Navbar() {
   return (
     <nav className={show ? "nav" : ""}>
       <h1>
-        <Link to="/" className="link">
+        <Link to="/culinary-voyage" className="link">
           Culinaray Voyage
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to="/menu" className="link">
+          <Link to="/culinary-voyage/menu" className="link">
             Menu
           </Link>
         </li>
         <li>
-          <Link to="/location" className="link">
+          <Link to="/culinary-voyage/location" className="link">
             Location
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="link">
+          <Link to="/culinary-voyage/contact" className="link">
             Contact
           </Link>
         </li>

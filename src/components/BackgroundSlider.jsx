@@ -19,7 +19,7 @@ function BackgroundSlider({ courseNumber }) {
   }, [currentState]);
 
   const bgImageStyle = {
-    backgroundImage: `url(${imageSlide[courseNumber][currentState].url})`,
+    backgroundImage: `url(/${imageSlide[courseNumber][currentState].url})`,
   };
 
   //currentIndex is the built in second paramater from map method
@@ -37,10 +37,7 @@ function BackgroundSlider({ courseNumber }) {
         </div>
         <div className="carousel_bullets">
           {imageSlide[courseNumber].map((imageSlide, currentIndex) => (
-            <span
-              key={currentIndex}
-              onClick={() => goToNext(currentIndex)}
-            ></span>
+            <span onClick={() => goToNext(currentIndex)}></span>
           ))}
         </div>
       </div>
